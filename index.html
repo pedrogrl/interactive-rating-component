@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./src/css/style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+
+  <main class="container">
+    <!-- Rating state start -->
+    <div id="rating-div">
+      <div class="icon-div">
+        <img src="./src/images/icon-star.svg" alt="Ícone de estrela">
+      </div>
+
+      <div class="text-div">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+      </div>
+
+      <div class="selectors-div">
+        <button class="btn-rate">1</button>
+        <button class="btn-rate">2</button>
+        <button class="btn-rate">3</button>
+        <button class="btn-rate">4</button>
+        <button class="btn-rate">5</button>
+      </div>
+
+      <div class="button-div">
+        <button id="btn-submit" class="btn-submit">Select one above!</button>
+      </div>
+    </div>
+    <!-- Rating state end -->
+
+    <!-- Thank you state start -->
+    <div id="thanks-div" class="hidden">
+      <div class="img-div">
+        <img src="./src/images/illustration-thank-you.svg" alt="Ilustração obrigado">
+      </div>
+
+      <div class="selected-stars-div">
+        <p>You selected <span class="result">5</span> out of 5</p>
+      </div>
+
+      <div class="text-div">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+    <!-- Thank you state end -->
+  </main>
+
+  <script src="./src/js/index.js"></script>
+</body>
+</html>

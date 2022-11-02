@@ -1,0 +1,183 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+// Variáveis
+$titulo: hsl(0, 0%, 100%);
+$seletores: hsl(217, 12%, 63%);
+$paragrafo: hsl(216, 12%, 54%);
+$fundo-divs: hsl(213, 19%, 18%);
+$fundo-icones: lighten($color: $fundo-divs, $amount: 5);
+$laranja: hsl(25, 97%, 53%);
+
+// Mixins
+@mixin containerPadding {
+  padding: 1.7rem 2.4rem;
+}
+
+// Estilo
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Overpass', sans-serif;
+}
+
+body{
+  background-color: hsl(216, 12%, 8%);
+  color: #fff;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+  main{
+    width: 25rem;
+
+    div#rating-div{
+      
+      // display: none;
+      @include containerPadding();
+
+      border-radius: 20px;
+      background-color: $fundo-divs;
+
+      div.icon-div{
+        img{
+          padding: .8rem;
+          border-radius: 100%;
+          background-color: $fundo-icones;
+        }
+      }
+
+      div.text-div{
+        margin: 1.5rem 0 1.5rem;
+
+        h1{
+          font-size: 1.5rem;
+          font-weight: 400;
+          margin-bottom: .6rem;
+        }
+        p{
+          font-size: 15px;
+          color: $paragrafo;
+        }
+      }
+
+      div.selectors-div{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.7rem;
+        button.btn-rate{
+          width: 2.7rem;
+          padding: .8rem;
+          border-radius: 100%;
+          border: none;
+
+          background-color: $fundo-icones;
+          color: $seletores;
+
+          transition: 0.2s;
+          &:hover{
+            background-color: $laranja;
+            color: white;
+            cursor: pointer;
+          }
+          &:focus{
+            background-color: $paragrafo;
+            color: white;
+          }
+        }
+      }
+
+      div.button-div{
+        button.btn-submit{
+          width: 100%;
+          border: none;
+          padding: .8rem;
+          border-radius: 30px;
+
+          background-color: #303a4660;
+          color: $seletores;
+          
+          font-weight: bold;
+          letter-spacing: .1rem;
+        }
+      }
+
+    }
+
+    div#thanks-div{
+      padding: 2rem 2rem 3rem;
+
+      border-radius: 20px;
+      background-color: $fundo-divs;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div.img-div{
+        margin: 1rem 0 1.5rem;
+      }
+
+      div.selected-stars-div{
+        p{
+          border-radius: 30px;
+          padding: .4rem 1.3rem;
+          font-size: .938rem;
+
+          color: $laranja;
+          background-color: $fundo-icones;
+        }
+      }
+
+      div.text-div{
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        h1{
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin-bottom: .7rem;
+        }
+        p{
+          font-size: 15px;
+          color: $paragrafo;
+        }
+      }
+    }
+
+    div#rating-div.hidden{
+      display: none;
+    }
+    div#thanks-div.hidden{
+      display: none;
+    }
+  }
+}
+
+.btn-submit-clickable{
+  width: 100%;
+  border: none;
+  padding: .8rem;
+  border-radius: 30px;
+
+  background-color: $laranja;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .1rem;
+
+  transition: .2s;
+  &:hover{
+    background-color: white;
+    color: $laranja;
+    cursor: pointer;
+  }
+}
+
