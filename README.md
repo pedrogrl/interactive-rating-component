@@ -3,9 +3,9 @@
 This is a solution to the [Interactive rating component](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ### Links
-
-- Solution URL: [here](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
+- Preview: [here](https://imgur.com/a/bMDoiuj)
 - Live Site URL: [here](https://pedrogrl.github.io/interactive-rating-component/)
+- Solution URL: [here](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI)
 
 ## Author
 
