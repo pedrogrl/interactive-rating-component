@@ -11,6 +11,13 @@ selectorsButtons.forEach(button => {
     submitButton.innerHTML = 'SUBMIT'
     submitButton.style.color = 'white'
 
+    submitButton.addEventListener('mouseover', () =>{
+      submitButton.style.color = '#fb7413'
+    })
+    submitButton.addEventListener('mouseleave', () =>{
+      submitButton.style.color = 'white'
+    })
+
     feedbackResult.innerHTML = button.innerHTML
     unlockHiddingDivRating();
   })
